@@ -2,6 +2,14 @@ source "https://rubygems.org"
 
 gemspec
 
+
+gem 'rspec', :path => File.expand_path('./rspec'), :require => false
+gem 'rspec-core', :path => File.expand_path('./rspec-core'), :require => false
+gem 'rspec-expectations', :path => File.expand_path('./rspec-expectations'), :require => false
+gem 'rspec-mocks', :path => File.expand_path('./rspec-mocks'), :require => false
+gem 'rspec-support', :path => File.expand_path('./rspec-support'), :require => false
+
+
 rspec_dependencies_gemfile = File.expand_path("../Gemfile-rspec-dependencies", __FILE__)
 eval_gemfile rspec_dependencies_gemfile
 
