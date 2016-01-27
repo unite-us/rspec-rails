@@ -62,7 +62,7 @@ module RSpec
       config.add_setting :use_instantiated_fixtures
       config.add_setting :global_fixtures
       config.add_setting :fixture_path
-      config.include RSpec::Rails::FixtureSupport, :use_fixtures
+      # config.include RSpec::Rails::FixtureSupport, :use_fixtures
 
       # We'll need to create a deprecated module in order to properly report to
       # gems / projects which are relying on this being loaded globally.
@@ -71,7 +71,7 @@ module RSpec
       #
       # @deprecated Include `RSpec::Rails::RailsExampleGroup` or
       #   `RSpec::Rails::FixtureSupport` directly instead
-      config.include RSpec::Rails::FixtureSupport
+      # config.include RSpec::Rails::FixtureSupport
 
       # This allows us to expose `render_views` as a config option even though it
       # breaks the convention of other options by using `render_views` as a
